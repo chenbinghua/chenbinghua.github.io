@@ -6,28 +6,28 @@
   
   <title>Block的使用 | 陈炳桦</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: Block的使用看到一个网站http://fuckingblocksyntax.com/  详细介绍的block的使用。网站名很有意思，大概就是我操你大爷的block语法，网站作者取如此“高雅”的名字，也从侧面反应了block语法的繁琐。
+  <meta name="description" content="看到一个网站http://fuckingblocksyntax.com/  详细介绍的block的使用。网站名很有意思，大概就是我操你大爷的block语法，网站作者取如此“高雅”的名字，也从侧面反应了block语法的繁琐。
 网站截图
 以下是我的理解和笔记，为了方便讲解，我并不会按照上面的顺序讲述
-1.作为一个局部变量As a local variable:
-retur">
+1.作为一个局部变量
+As a local variable:returnType (^blockNa">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Block的使用">
 <meta property="og:url" content="http://yoursite.com/2015/07/31/Block的使用/index.html">
 <meta property="og:site_name" content="陈炳桦">
-<meta property="og:description" content="title: Block的使用看到一个网站http://fuckingblocksyntax.com/  详细介绍的block的使用。网站名很有意思，大概就是我操你大爷的block语法，网站作者取如此“高雅”的名字，也从侧面反应了block语法的繁琐。
+<meta property="og:description" content="看到一个网站http://fuckingblocksyntax.com/  详细介绍的block的使用。网站名很有意思，大概就是我操你大爷的block语法，网站作者取如此“高雅”的名字，也从侧面反应了block语法的繁琐。
 网站截图
 以下是我的理解和笔记，为了方便讲解，我并不会按照上面的顺序讲述
-1.作为一个局部变量As a local variable:
-retur">
-<meta property="og:updated_time" content="2015-07-31T13:38:46.000Z">
+1.作为一个局部变量
+As a local variable:returnType (^blockNa">
+<meta property="og:updated_time" content="2015-07-31T13:45:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Block的使用">
-<meta name="twitter:description" content="title: Block的使用看到一个网站http://fuckingblocksyntax.com/  详细介绍的block的使用。网站名很有意思，大概就是我操你大爷的block语法，网站作者取如此“高雅”的名字，也从侧面反应了block语法的繁琐。
+<meta name="twitter:description" content="看到一个网站http://fuckingblocksyntax.com/  详细介绍的block的使用。网站名很有意思，大概就是我操你大爷的block语法，网站作者取如此“高雅”的名字，也从侧面反应了block语法的繁琐。
 网站截图
 以下是我的理解和笔记，为了方便讲解，我并不会按照上面的顺序讲述
-1.作为一个局部变量As a local variable:
-retur">
+1.作为一个局部变量
+As a local variable:returnType (^blockNa">
   
     <link rel="alternative" href="/atom.xml" title="陈炳桦" type="application/atom+xml">
   
@@ -106,23 +106,24 @@ retur">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="title:_Block的使用">title: Block的使用</h2><p>看到一个网站<a href="http://fuckingblocksyntax.com/" target="_blank" rel="external">http://fuckingblocksyntax.com/</a>  详细介绍的block的使用。网站名很有意思，大概就是我操你大爷的block语法，网站作者取如此“高雅”的名字，也从侧面反应了block语法的繁琐。</p>
+        <p>看到一个网站<a href="http://fuckingblocksyntax.com/" target="_blank" rel="external">http://fuckingblocksyntax.com/</a>  详细介绍的block的使用。网站名很有意思，大概就是我操你大爷的block语法，网站作者取如此“高雅”的名字，也从侧面反应了block语法的繁琐。</p>
 <p>网站截图</p>
 <p>以下是我的理解和笔记，为了方便讲解，我并不会按照上面的顺序讲述</p>
-<h2 id="1-作为一个局部变量">1.作为一个局部变量</h2><p>As a local variable:</p>
-<p>returnType (^blockName)(parameterTypes) = ^returnType(parameters) {…};</p>
+<h2 id="1-作为一个局部变量">1.作为一个局部变量</h2><blockquote>
+<p>As a local variable:<br><br>returnType (^blockName)(parameterTypes) = ^returnType(parameters) {…};</p>
+</blockquote>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明一个无参的名字为sayHello的block</span></span><br><span class="line"><span class="keyword">void</span> (^sayHello)() = ^<span class="keyword">void</span>()&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"hello"</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明一个参数为NString,名字为sayHelloAndName的block</span></span><br><span class="line"><span class="keyword">void</span> (^sayHelloAndName)(<span class="built_in">NSString</span> *) = ^<span class="keyword">void</span>(<span class="built_in">NSString</span> *name)&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"hello,%@"</span>,name);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[]) &#123;</span><br><span class="line">    <span class="keyword">@autoreleasepool</span> &#123;</span><br><span class="line">    	sayHello();	<span class="comment">// hello</span></span><br><span class="line">        sayHelloAndName(<span class="string">@"chenbingua"</span>); <span class="comment">// hello,chenbinghua</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>刚开始学习block的时候，常常会忘记怎么写。后来想到一个窍门，先回想一下c语言的函数或者java的方法。</p>
 <p>例如c语言的函数是这样写的</p>
 <figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 函数的声明</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span>,<span class="keyword">int</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数的定义</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>从C语言函数的声明稍微变化一下就变成block int (^sum)(int,int)</p>
 <p>这里值得注意的是，block不能通过传进不同参数实现类似Java的方法重载，要是硬要把一个NSString传进sayHello的block,例如调用sayHello(@”chenbinghua”)，执行结果依然是打印hello,即只是调用了sayHello()。为什么这样呢，还要研究研究。</p>
-<h2 id="2-作为一个typeof">2.作为一个typeof</h2><p>As a typedef:</p>
-<p>typedef returnType (^TypeName)(parameterTypes);<br><br>TypeName blockName = ^returnType(parameters) {…};</p>
+<h2 id="2-作为一个typeof">2.作为一个typeof</h2><p>&gt;<br>As a typedef:<br><br>typedef returnType (^TypeName)(parameterTypes);<br><br>TypeName blockName = ^returnType(parameters) {…};</p>
 <p>block也可以先定义类型后实现</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义一个无参的，类型名为SayHello的block</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">void</span> (^SayHello)();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 利用SayHello类型的block声明一个sayHello变量，并实现</span></span><br><span class="line">SayHello sayHello = ^()&#123;</span><br><span class="line">     <span class="built_in">NSLog</span>(<span class="string">@"hello"</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[]) &#123;</span><br><span class="line">    <span class="keyword">@autoreleasepool</span> &#123;</span><br><span class="line">        sayHello(); <span class="comment">//hello</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="3-作为一个类成员属性">3.作为一个类成员属性</h2><p>As a property:</p>
-<p>@property (nonatomic, copy) returnType (^blockName)(parameterTypes);</p>
+<h2 id="3-作为一个类成员属性">3.作为一个类成员属性</h2><blockquote>
+<p>As a property:<br><br>@property (nonatomic, copy) returnType (^blockName)(parameterTypes);</p>
+</blockquote>
 <p>@property关键字的参数要用copy,这关乎block的内存管理</p>
 <p>假如Button类有一个void (^blockName)()的属性</p>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Button的头文件</span></span><br><span class="line"><span class="variable">@interface</span> <span class="attribute">Button </span>: NSObject</span><br><span class="line"></span><br><span class="line"><span class="comment">// 编译器自动生成变量名为_ButtonBlock的变量</span></span><br><span class="line"><span class="variable">@property</span> (nonatomic, copy) void (^ButtonBlock)();</span><br><span class="line"></span><br><span class="line"><span class="variable">@end</span></span><br></pre></td></tr></table></figure>
@@ -136,7 +137,7 @@ retur">
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2015/07/31/Block的使用/" data-id="cicroexej0000jod6eo0nmi4g" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://yoursite.com/2015/07/31/Block的使用/" data-id="cicronef70000l4d6vdfja5tj" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
