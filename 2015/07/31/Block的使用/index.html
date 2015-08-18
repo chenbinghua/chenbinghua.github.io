@@ -52,7 +52,7 @@
 其实Block的语法还是有迹可循的，顺着网站的内容，顺便也整理一下我的Block笔记。以下是我的理解和笔记，为了方便讲解，我并不会按照上面的顺序讲述
 一.作为一个局">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/7b8f5792gw1euqhthu6hkj20id0dxgnp.jpg">
-<meta property="og:updated_time" content="2015-08-11T12:17:32.000Z">
+<meta property="og:updated_time" content="2015-08-14T10:20:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Block的使用语法">
 <meta name="twitter:description" content="看到一个网站http://fuckingblocksyntax.com/  简单总结了Block的语法。
@@ -211,6 +211,7 @@
 <p>As a local variable:<br><br>returnType (^blockName)(parameterTypes) = ^returnType(parameters) {…};</p>
 </blockquote>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明一个无参的名字为sayHello的block</span></span><br><span class="line"><span class="keyword">void</span> (^sayHello)() = ^<span class="keyword">void</span>()&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"hello"</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明一个参数为NString,名字为sayHelloAndName的block</span></span><br><span class="line"><span class="keyword">void</span> (^sayHelloAndName)(<span class="built_in">NSString</span> *) = ^<span class="keyword">void</span>(<span class="built_in">NSString</span> *name)&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"hello,%@"</span>,name);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[]) &#123;</span><br><span class="line">    <span class="keyword">@autoreleasepool</span> &#123;</span><br><span class="line">    	sayHello();	<span class="comment">// hello</span></span><br><span class="line">        sayHelloAndName(<span class="string">@"chenbingua"</span>); <span class="comment">// hello,chenbinghua</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Xcode也考虑到很多人会偶尔忘记怎么写一个Block,所以在Xcode输入 ‘inlineBlock’或前几个字母的时候，会输出一下代码</p>
 <p>刚开始学习Block的时候，常常会忘记怎么写。后来想到一个窍门，先回想一下c语言的函数或者java的方法。</p>
 <p>例如c语言的函数是这样写的</p>
 <figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 函数的声明</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span>,<span class="keyword">int</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数的定义</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -249,7 +250,7 @@
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/07/31/hello-world/" rel="next">Hello Hexo</a>
+              <a href="/2015/01/31/hello-world/" rel="next">Hello Hexo</a>
             
           </div>
         </div>
